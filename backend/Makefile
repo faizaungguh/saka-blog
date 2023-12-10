@@ -1,3 +1,8 @@
+#python
+py-backend:
+	python3 app.py
+
+#docker
 dev-backend:
 	docker build -t dev-backend .
 
