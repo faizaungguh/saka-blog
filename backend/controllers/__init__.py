@@ -1,7 +1,10 @@
 from flask import jsonify
-from connection import checkDatabase, dbName
+from utils.error import handle404
 from app import app
 
-@app.route('/')
+@app.route('/api')
 def index():
     return jsonify(message="Hi, dunia!")
+
+# error handler
+app.register_error_handler(404, handle404)

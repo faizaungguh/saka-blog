@@ -1,4 +1,5 @@
 from flask import Flask
+from connection import checkDatabase, dbName
 
 app = Flask(__name__)
 
