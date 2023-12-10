@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from utils.environment import client, dbName
+from configs import client, dbName
 
 load_dotenv() # panggil os dan dotenv untuk membaca .env, dan memanggil environment yang kita tentukan
 
